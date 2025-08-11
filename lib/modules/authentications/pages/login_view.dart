@@ -1,8 +1,8 @@
 import 'package:evently_7/core/constants/app_assets.dart';
+import 'package:evently_7/core/routes/page_routes.dart';
 import 'package:evently_7/core/theme_manager/color_pallate.dart';
 import 'package:evently_7/core/widgets/Custom_text_form_field.dart';
 import 'package:evently_7/core/widgets/custom_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -37,7 +37,9 @@ class LoginView extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, PageRoutesName.forgetPassword);
+                },
                 child: Text(
                   "Forget Password",
                   style: TextStyle(
@@ -53,6 +55,7 @@ class LoginView extends StatelessWidget {
             ),
             SizedBox(height: 24),
             CustomButton(
+              color: ColorPallate.primaryColor,
               child: Text(
                 "Login",
                 style: TextStyle(
@@ -68,11 +71,12 @@ class LoginView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Don’t Have Account",
+                  "Don’t Have Account ?  ",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
-                TextButton(
-                  onPressed: () {},
+                GestureDetector(
+                  onTap : () =>
+                      Navigator.pushNamed(context, PageRoutesName.register),
                   child: Text(
                     "Create Account",
                     style: TextStyle(
@@ -104,6 +108,32 @@ class LoginView extends StatelessWidget {
                 ),
                 Expanded(child: Divider(color: ColorPallate.primaryColor)),
               ],
+            ),
+            SizedBox(height: 24),
+            CustomButton(
+              color: Colors.white,
+              onTap: () {},
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+                    child: Image.asset(
+                      AppAssets.googleIcn,
+                      width: 25,
+                      height: 25,
+                    ),
+                  ),
+                  Text(
+                    "Login With Google",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: ColorPallate.primaryColor,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

@@ -70,6 +70,9 @@ flutter:
     - assets/images/OnBoardingScreen/being-creativeintro3.png
     - assets/icons/mail_icn.png
     - assets/icons/pass_icn.png
+    - assets/icons/google_icn.png
+    - assets/images/forgetpass/change-setting.png
+    - assets/icons/prson_icn.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
