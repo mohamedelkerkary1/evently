@@ -2,6 +2,7 @@ import 'package:evently_7/core/routes/page_routes.dart';
 import 'package:evently_7/modules/authentications/pages/ForgetPass.dart';
 import 'package:evently_7/modules/authentications/pages/RegisterView.dart';
 import 'package:evently_7/modules/authentications/pages/login_view.dart';
+import 'package:evently_7/modules/layout/layout.dart';
 import 'package:evently_7/modules/onBoarding/intro/AppDesc.dart';
 import 'package:evently_7/modules/onBoarding/onBoardingscreen.dart';
 import 'package:evently_7/modules/splashScreen/splashView.dart';
@@ -28,6 +29,9 @@ abstract class AppRoutes {
 
       case PageRoutesName.forgetPassword:
         return MaterialPageRoute(builder: ( _) => const Forgetpass());
+
+      case PageRoutesName.layout:
+        return MaterialPageRoute(builder: ( _) => const Layout());
 
       default:
         return MaterialPageRoute(builder: (_) => const SplashView());

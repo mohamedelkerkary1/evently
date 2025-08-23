@@ -33,6 +33,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.8
+  flutter_bounceable: ^1.2.0
   smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
@@ -73,6 +74,14 @@ flutter:
     - assets/icons/google_icn.png
     - assets/images/forgetpass/change-setting.png
     - assets/icons/prson_icn.png
+    - assets/icons/fav.png
+    - assets/icons/map.png
+    - assets/icons/person.png
+    - assets/icons/HomeIcn.png
+    - assets/icons/home_active_icn.png
+    - assets/icons/map_active_Icn.png
+    - assets/icons/fav_active_Icn.png
+    - assets/icons/person_active_Icn.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

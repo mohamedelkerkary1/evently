@@ -6,6 +6,8 @@ abstract class PageRoutesName {
   static const String home = '/home';
   static const String appDesc = '/AppDesc';
   static const String onboardingScreen = '/onBoardingScreen';
+  static const String layout = '/layout';
+
 
 
 

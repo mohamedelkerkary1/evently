@@ -1,7 +1,6 @@
 import 'package:evently_7/core/constants/app_assets.dart';
 import 'package:evently_7/core/routes/page_routes.dart';
 import 'package:flutter/material.dart';
-
 import '../../../core/theme_manager/color_pallate.dart';
 import '../../../core/widgets/custom_button.dart';
 
