@@ -15,7 +15,7 @@ abstract class AppAssets {
   static const String mapActiveIcn = "assets/icons/map_active_Icn.png";
   static const String favActiveIcn = "assets/icons/fav_active_Icn.png";
   static const String personActiveBNBarIcn = "assets/icons/person_active_Icn.png";
-
+  static const String brightnessIcn = "assets/icons/brightnessMode.png";
 
 
 
