@@ -37,6 +37,7 @@ dependencies:
   smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
+  url_launcher: ^6.1.11
   flutter_test:
     sdk: flutter
 
@@ -83,6 +84,7 @@ flutter:
     - assets/icons/fav_active_Icn.png
     - assets/icons/person_active_Icn.png
     - assets/icons/brightnessMode.png
+    - assets/images/home_view/sportImg.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
